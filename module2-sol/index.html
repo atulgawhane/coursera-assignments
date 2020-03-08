@@ -1,60 +1,112 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="device-width, initial-scale=1">
-	<title>Hotel Maratha Darbar</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>The Menu</title>
 
 <style>
-	/**********************************positioning******************************/
+/* Base Styles */
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
 }
 
-h1,h2 {
-  margin-bottom: 15px;
-  text-align: center;
-  font-family: "helvetica", sans-serif;
-  margin-bottom: 50px;
+h1 {
+	font-family: Brushstroke, fantasy;
+	color: #000000;
+	text-align: center;
 }
 
-div#container1, #container2, #container3 {
- text-align: center;
- width: 380px;
- height:500px;
- margin-left: 60px;
- margin-bottom: 30px;
-
- background-color: #FF6347;
-}
-p#p1,#p2,#p3 {
-  width: 200px;
-  height: 40px;
-  border: 1px ;
-  font-size: 20px;
-  margin-bottom: 15px;
-  position: relative;
-  top: 8px;
-  left: 170px;
-
-  background-color: #C0C0C0;
+body {
+     
+     background-color: #FEF5CA;
 
 }
 
-/*******************************simple responsive***************************/
-.row{
+p {
+	padding: 10px;
+	margin: 0;
+}
+
+.container {
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+section {
+	border:	1px solid black;
+	background-color: #00FF99;
+	width: 100%;
+	height: 200px;
+	font-family: Helvetica;
+	color: black;
+	position: relative;
+	overflow: auto;
+}
+
+#chicken {
+	border: 1px solid black;
+	text-align: center;
+	width: 30%;
+	margin-left: 70%;
+	font-family: Georgia,sans-serif;
+	font-weight: bold;
+	font-size: 125%;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 5px;
+	background-color: #FFFF00;
+}
+
+#burger {
+	border: 1px solid black;
+	text-align: center;
+	width: 30%;
+	margin-left: 70%;
+	font-family: Georgia,sans-serif;
+	font-weight: bold;
+	font-size: 125%;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 5px;
+	background-color: #FF1439;
+}
+
+#pasta {
+	border: 1px solid black;
+	text-align: center;
+	width: 30%;
+	margin-left: 70%;
+	font-family: Georgia,sans-serif;
+	font-weight: bold;
+	font-size: 125%;
+	margin-bottom: 0;
+	margin-top: 0;
+	background-color: #6495ED;
+	color: white;
+	padding: 5px;
+}
+
+.row {
 	width: 100%;
 }
 
-/********** Large devices only **********/
-@media (min-width: 1200px) {
+/* Desktop view */
+
+@media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px;
-    
   }
+
   .col-lg-1 {
     width: 8.33%;
   }
@@ -91,15 +143,16 @@ p#p1,#p2,#p3 {
   .col-lg-12 {
     width: 100%;
   }
+
 }
 
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+/* Tablet view */
+
+@media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px;
-   
   }
+
   .col-md-1 {
     width: 8.33%;
   }
@@ -138,32 +191,88 @@ p#p1,#p2,#p3 {
   }
 }
 
+/* Mobile view */
 
-  </style>
+@media (max-width: 768px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+ 	float: left;
+  }
+
+  .col-sm-1 {
+    width: 8.33%;
+  }
+  .col-sm-2 {
+    width: 16.66%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-5 {
+    width: 41.66%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33%;
+  }
+  .col-sm-8 {
+    width: 66.66%;
+  }
+  .col-sm-9 {
+    width: 74.99%;
+  }
+  .col-sm-10 {
+    width: 83.33%;
+  }
+  .col-sm-11 {
+    width: 91.66%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+</style>
+
+
+
 </head>
 <body>
-<h1>HOTEL MARATHA DARBAR</h1>
-<h2>OUR MENU</h2>
-
-<div class="row">
-  <div class="col-lg-4 col-md-6"><p><div id="container1">
-<p id="p1">Kolhapuri Chicken</p>
-<p><h4>About Kolhapuri Chicken Recipe: Kolhapuri cuisine is known to be spicy and full of flavour. The unique flavour comes from the fresh ground spices and grated coconut. You will find special kolhapuri chicken in many restaurant menus. With this easy and quick recipe that you can prepare in just 30 minutes, relish at home for dinner or serve as a main dish at dinner parties. Serve with hot, steamed rice or any Indian bread of your choice.Ingredients in Kolhapuri Chicken Recipe: Marinated and then cooked with bay leaf, cinnamon, cloves, black pepper and ground paste, kolhapuri chicken comes out as a delicious winner<h4></p>
-</div></p></div>
-
-
-  <div class="col-lg-4 col-md-6"><p><div id="container2"> 
-<p id="p2">Puran Poli</p>
-<p><h4>Food is the ultimate spirit of any festive occasion and the popular Maharashtrian dish puran poli defines the festival of Ganesh Chaturthi and other festive occasions like Diwali. It is an easy recipe of flat bread stuffed with a sweet lentil filling made from chana dal and sugar. You can use Bengal gram and jaggery too. In Marathi language, the sweet filling is called puran and the outer bread is the poli. It is a delicious side dish with rich flavours yet extremely easy and quick to make. Loved by kids and adults alike, you can even pack this dish for tiffin.</h4></p></div></p></div>
-
-
-  <div class="col-lg-4 col-md-6"><p><div id="container3"> 
-<p id="p3">Poha & Batata wada</p>
-<p><h4>'Kanda' in Marathi means onion and 'Batata' means potato. Kanda Batata Poha is perfect for breakfast or in the evening as a mid-meal snack. Chiwda is soaked in water overnight and cooked with vegetables, peanuts and spices. It is served with diced raw onions on top. You can sprinkle some Bhujia (namkeen) to add a crunch. Batata Vada consists of a mashed potato patty coated with chickpea flour, deep fried and served piping hot with chutney. This snack is enjoyed the most with a cup of tea on a rainy day</h4></p>
-</div></p></div>
- </div>
-
-
-
+	<h1>Our Menu</h1>
+	<div class="row">
+	<div class="container col-lg-4 col-md-6 col-sm-12">
+		<section>
+		<div id="chicken">
+			Chicken
+		</div>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique ipsum sit amet nunc posuere, at dictum massa fermentum. Sed tempor turpis quis dui pharetra, eu suscipit elit cursus. Praesent sed libero turpis. Aliquam varius elit mauris, vestibulum laoreet leo rhoncus ac. Fusce at facilisis velit. Vivamus facilisis semper risus, et efficitur justo suscipit ac. 
+		</p>
+		</section>
+	</div>
+	<div class="container col-lg-4 col-md-6 col-sm-12">
+		<section>
+		<div id="burger">
+			Burger
+		</div>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique ipsum sit amet nunc posuere, at dictum massa fermentum. Sed tempor turpis quis dui pharetra, eu suscipit elit cursus. Praesent sed libero turpis. Aliquam varius elit mauris, vestibulum laoreet leo rhoncus ac. Fusce at facilisis velit. Vivamus facilisis semper risus, et efficitur justo suscipit ac. 
+		</p>
+		</section>
+	</div>
+	<div class="container col-lg-4 col-md-12 col-sm-12">
+		<section>
+		<div id="pasta">
+			Pasta
+		</div>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique ipsum sit amet nunc posuere, at dictum massa fermentum. Sed tempor turpis quis dui pharetra, eu suscipit elit cursus. Praesent sed libero turpis. Aliquam varius elit mauris, vestibulum laoreet leo rhoncus ac. Fusce at facilisis velit. Vivamus facilisis semper risus, et efficitur justo suscipit ac. 
+		</p>
+		</section>
+	</div>
+	</div>
 </body>
 </html>
